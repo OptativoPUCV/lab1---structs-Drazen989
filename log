@@ -110,3 +110,9 @@ exercises.c:17:23: error: ‘max’ undeclared (first use in this function); did
 exercises.c:17:23: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 8630d67
+Thu 14 Mar 2024 08:49:27 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|6
+total_score: 10/70
+7b07498
