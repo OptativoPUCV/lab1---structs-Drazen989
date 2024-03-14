@@ -69,7 +69,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
     for (int i = 0; i < size1; i++){
       vectorNuevo[i] = arr1[i];
     }
-    for (int j = 0 , int i = size1; i < totalTalla; i++ , j++){
+    for (int j = 0 , i = size1; i < totalTalla; i++ , j++){
       vectorNuevo[i] = arr2[j];
     }
   }
@@ -77,7 +77,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
     for (int i = 0; i < size2; i++){
       vectorNuevo[i] = arr2[i];
     }
-    for (int j = 0 , int i = size2; i < totalTalla; i++ , j++){
+    for (int j = 0 , i = size2; i < totalTalla; i++ , j++){
       vectorNuevo[i] = arr1[j];
   }
 
