@@ -63,22 +63,22 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
   int totalTalla = size1 + size2;
-  int vectorNuevo[totalTalla];
+  int result[totalTalla];
 
   if (arr1[size1-1] < arr2[0]){
     for (int i = 0; i < size1; i++){
-      vectorNuevo[i] = arr1[i];
+        result[i] = arr1[i];
     }
     for (int i = size1; i < totalTalla; i++){
-      vectorNuevo[i] = arr2[i-size1];
+        result[i] = arr2[i-size1];
     }
   }
   else{
     for (int i = 0; i < size2; i++){
-      vectorNuevo[i] = arr2[i];
+        result[i] = arr2[i];
     }
       for (int i = size2; i < totalTalla; i++){
-      vectorNuevo[i] = arr1[i-size2];
+        result[i] = arr1[i-size2];
   }
 
 
