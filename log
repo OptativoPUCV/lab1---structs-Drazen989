@@ -41,3 +41,22 @@ exercises.c:18:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 7b74630
+Thu 14 Mar 2024 08:45:51 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:15:7: error: ‘maximo’ undeclared (first use in this function)
+   15 |       maximo = arr[i];
+      |       ^~~~~~
+exercises.c:15:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:17:20: error: ‘max’ undeclared (first use in this function); did you mean ‘fmax’?
+   17 |       if (arr[i] > max) max = arr[i];
+      |                    ^~~
+      |                    fmax
+exercises.c:21:1: error: control reaches end of non-void function [-Werror=return-type]
+   21 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+306e6d5
