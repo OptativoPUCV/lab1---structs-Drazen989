@@ -211,3 +211,17 @@ exercises.c:54:11: error: assignment to ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 8627b53
+Thu 14 Mar 2024 09:05:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:7: error: invalid type argument of unary ‘*’ (have ‘int’)
+   50 |       *newArr[i] = arr[i];
+      |       ^~~~~~~~~~
+exercises.c:54:11: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   54 |   newSize = contador;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+d198e47
