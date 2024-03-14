@@ -171,3 +171,14 @@ exercises.c:48:8: error: ‘i’ undeclared (first use in this function)
 exercises.c:48:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 bd187bf
+Thu 14 Mar 2024 09:02:19 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:8: error: ‘i’ undeclared (first use in this function)
+   48 |   for (i = 0 ; i < size ; i++){
+      |        ^
+exercises.c:48:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f52f062
