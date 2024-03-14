@@ -197,3 +197,17 @@ exercises.c:54:11: error: assignment to ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 df9e34c
+Thu 14 Mar 2024 09:05:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:16: error: subscripted value is neither array nor pointer nor vector
+   50 |       (*newArr)[i] = arr[i];
+      |                ^
+exercises.c:54:11: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   54 |   newSize = contador;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+8627b53
