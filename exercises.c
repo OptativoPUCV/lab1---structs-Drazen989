@@ -121,10 +121,14 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size) {
   int ascendente = 0;
   int descendente = 0;
+  int total = size-1;
   for (int i = 0; i < size-1; i++){
     if (arr[i] < arr[i+1]){
       ascendente++;
       
+    }
+    else if (arr[i] == arr[i+1]) {
+        total--;
     }
     else {
       descendente++;
@@ -132,11 +136,11 @@ int checkSorted(int arr[], int size) {
     }
     
   }
-  if (ascendente == size - 1)
+  if (ascendente == total)
     return 1;
   
   else{
-    if (descendente == size - 1)
+    if (descendente == total)
      return -1;
     
     else
